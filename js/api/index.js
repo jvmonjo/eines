@@ -1,4 +1,4 @@
-const axios = require('axios');
+import axios from 'axios'
 
 export default function getQuote() {
   axios.get('https://got-quotes.herokuapp.com/quotes')
