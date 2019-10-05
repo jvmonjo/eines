@@ -1,2 +1,2 @@
-const name = 'world'
-console.log(`Hello ${name}!`)
+import getQuote from './api'
+getQuote();
