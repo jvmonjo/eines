@@ -16,11 +16,11 @@ export default function getDetails(slug) {
         photo.src = details.image
       }
       const gender = document.getElementById('gender')
-      gender.innerHTML = details.gender
+      gender.innerHTML = details.gender ? details.gender : ''
       const culture = document.getElementById('culture')
-      culture.innerHTML = details.culture
+      culture.innerHTML = details.culture ? details.culture : ''
       const titles = document.getElementById('titles')
-      titles.innerHTML = details.titles
+      titles.innerHTML = details.titles ? details.titles : ''
       const birth = document.getElementById('birth')
       birth.innerHTML = details.birth ? details.birth : ''
       const placeOfBirth = document.getElementById('placeOfBirth')
