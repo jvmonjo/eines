@@ -5,6 +5,12 @@ export default function getMembers(house) {
     .then(function (response) {
       console.log(response.data)
       const members = response.data
+      const title = document.getElementById('title')
+      title.innerHTML = house
+      const escut = document.getElementById('escut')
+      const menu = document.getElementById(`menu ${house}`)
+      menu.className = 'active'
+      escut.src = `/assets/img/${house}.svg`
       const toAdd = document.createDocumentFragment();
       for (const member of members) {
         const a = document.createElement('a');

@@ -16,22 +16,29 @@
     <h1><a href="/">GOT</a></h1>
     <nav>
       <ul>
-        <li id="menu-stark"><a href="/house?name=House Stark">House of Stark</a></li>
-        <li id="menu-lannister"><a href="/house?name=House Lannister">House of Lannister</a></li>
-        <li id="menu-targaryen"><a href="/house?name=House Targaryen">House of Targaryen</a></li>
+        <li id="menu House Stark"><a href="/house?name=House Stark">House of Stark</a></li>
+        <li id="menu House Lannister"><a href="/house?name=House Lannister">House of Lannister</a></li>
+        <li id="menu House Targaryen"><a href="/house?name=House Targaryen">House of Targaryen</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section>
       <div class="house-header">
-        <img id="escut" class="house" src="~assets/img/House Lannister.svg" alt="">
+        <img id="escut" class="house" src="/assets/img/escut.svg" alt="">
         <h2 id="title">
-          House of Lannister
+          ...loading
         </h2>
       </div>
-      <div id="details">
-
+      <div id="details" class="card">
+        <img id="photo" src="/assets/img/anonim.svg" alt="">
+        <ul>
+          <li><strong>Gender:</strong> <span id="gender"></span></li>
+          <li><strong>Culture:</strong> <span id="culture"></span></li>
+          <li><strong>Titles:</strong> <span id="titles"></span></li>
+          <li><strong>Birth:</strong> <span id="birth"></span> <span id="placeOfBirth"></span></li>
+          <li><strong>Death:</strong> <span id="death"></span> <span id="placeOfDeath"></span></li>
+        </ul>
       </div>
     </section>
   </main>

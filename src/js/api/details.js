@@ -7,10 +7,28 @@ export default function getDetails(slug) {
       const details = response.data
       const title = document.getElementById('title')
       title.innerHTML = details.name
+      const menu = document.getElementById(`menu ${details.house}`)
+      menu.className = 'active'
       const escut = document.getElementById('escut')
-      // eslint-disable-next-line no-undef
       escut.src = `/assets/img/${details.house}.svg`
-      // const toAdd = document.createDocumentFragment();
+      if (details.image) {
+        const photo = document.getElementById('photo')
+        photo.src = details.image
+      }
+      const gender = document.getElementById('gender')
+      gender.innerHTML = details.gender
+      const culture = document.getElementById('culture')
+      culture.innerHTML = details.culture
+      const titles = document.getElementById('titles')
+      titles.innerHTML = details.titles
+      const birth = document.getElementById('birth')
+      birth.innerHTML = details.birth ? details.birth : ''
+      const placeOfBirth = document.getElementById('placeOfBirth')
+      placeOfBirth.innerHTML = details.placeOfBirth ? `in ${details.placeOfBirth}` : ''
+      const placeOfDeath = document.getElementById('placeOfDeath')
+      placeOfDeath.innerHTML = details.placeOfDeath ? `in ${details.placeOfDeath}` : ''
+      const death = document.getElementById('death')
+      death.innerHTML = details.death ? details.death : ''
       console.log(details);
       // for (const member of members) {
       //   const a = document.createElement('a');
