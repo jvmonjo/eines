@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
-    "parcel:dev": "parcel src/./**/*.html",
-    "parcel:build": "parcel build src/./**/*.html",
+    "parcel:dev": "parcel src/*.html src/assets/*.* src/./**/*.html",
+    "parcel:build": "parcel build src/*.html src/assets/*.* src/./**/*.html",
     "clean": "rimraf dist .cache .cache-loader"
   },
   "devDependencies": {
