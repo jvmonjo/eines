@@ -14,3 +14,10 @@ https://github.com/parcel-bundler/parcel/issues/1315
 ## Observacions
 
 -Instalat axios per a gestionar les cridades a api
+
+## Dades
+Les dades provenen d'aquestes apis:
+
+https://api.got.show/
+
+https://got-quotes.herokuapp.com/
