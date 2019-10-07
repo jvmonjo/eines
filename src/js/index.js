@@ -1,2 +1,2 @@
-import getQuote from './api'
+import getQuote from './api/quote'
 getQuote();
