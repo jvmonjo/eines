@@ -9,7 +9,7 @@ export default function getDetails(slug) {
       title.innerHTML = details.name
       const escut = document.getElementById('escut')
       // eslint-disable-next-line no-undef
-      escut.src = `/assets/img/${details.house}.svg`
+      escut.src = require(`/assets/img/${details.house}.svg`)
       // const toAdd = document.createDocumentFragment();
       console.log(details);
       // for (const member of members) {
