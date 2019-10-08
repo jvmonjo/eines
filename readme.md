@@ -14,6 +14,7 @@ https://github.com/parcel-bundler/parcel/issues/1315
 ## Observacions
 
 -Instalat axios per a gestionar les cridades a api
+-Afegida la llibreria d'estils css _hamburguers_ per gestionar el botó del menú
 
 ## Dades
 Les dades provenen d'aquestes apis:
