@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Proza+Libre:400,700&display=swap');
+$hamburger-layer-color: white;
 @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 @mixin for-phone-only {
