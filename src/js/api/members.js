@@ -5,6 +5,7 @@ export default function getMembers(house) {
     .then(function (response) {
       // console.log(response.data)
       const members = response.data
+      document.title = `${house} | Treball assignatura Eines HTML i CSS`
       const title = document.getElementById('title')
       title.innerHTML = house
       const escut = document.getElementById('escut')

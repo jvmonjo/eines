@@ -5,6 +5,7 @@ export default function getDetails(slug) {
     .then(function (response) {
       // console.log(response.data)
       const details = response.data
+      document.title = `${details.name} details | Treball assignatura Eines HTML i CSS`
       const title = document.getElementById('title')
       title.innerHTML = details.name
       const menu = document.getElementById(`menu ${details.house}`)
