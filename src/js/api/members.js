@@ -8,9 +8,11 @@ export default function getMembers(house) {
       const title = document.getElementById('title')
       title.innerHTML = house
       const escut = document.getElementById('escut')
-      const menu = document.getElementById(`menu ${house}`)
+      const n = house.split(' ')
+      const houseId = n[n.length - 1]
+      const menu = document.getElementById(`menu-${houseId}`)
       menu.className = 'active'
-      escut.src = `/assets/img/${house}.svg`
+      escut.src = `/assets/img/${houseId}.svg`
       const toAdd = document.createDocumentFragment();
       for (const member of members) {
         const a = document.createElement('a');

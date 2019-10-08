@@ -10,7 +10,9 @@ export default function getDetails(slug) {
       const menu = document.getElementById(`menu ${details.house}`)
       menu.className = 'active'
       const escut = document.getElementById('escut')
-      escut.src = `/assets/img/${details.house}.svg`
+      const n = details.house.split(' ')
+      const houseId = n[n.length - 1]
+      escut.src = `/assets/img/${houseId}.svg`
       if (details.image) {
         const photo = document.getElementById('photo')
         photo.src = details.image
