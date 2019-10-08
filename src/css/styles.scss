@@ -50,6 +50,15 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
 ul.description {
   padding-left: 2rem;
 }
@@ -150,8 +159,6 @@ nav ul li.active::after {
 }
 
 header a {
-  text-decoration: none;
-  color: inherit;
   display: inline-block;
 }
 
@@ -214,8 +221,6 @@ blockquote {
 }
 
 #categories a {
-  text-decoration: none;
-  color: inherit;
   text-align: center;
 }
 
@@ -259,11 +264,6 @@ img.house {
   flex-wrap: wrap;
   margin: auto auto;
   justify-content: space-around;
-}
-
-#members a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .fa {
@@ -330,4 +330,9 @@ figcaption {
 
 figcaption cite {
   float: right;
+}
+
+#members .card,
+.details .card {
+  border-top: 5px solid var(--primary-color);
 }
