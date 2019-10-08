@@ -3,7 +3,7 @@ import axios from 'axios'
 export default function getMembers(house) {
   axios.get(`https://api.got.show/api/book/characters/byHouse/${house}`)
     .then(function (response) {
-      console.log(response.data)
+      // console.log(response.data)
       const members = response.data
       const title = document.getElementById('title')
       title.innerHTML = house
@@ -30,7 +30,7 @@ export default function getMembers(house) {
         li.className = 'card';
         toAdd.appendChild(a);
         document.getElementById('members').appendChild(toAdd);
-        console.log(member);
+        // console.log(member);
       }
       // const div = document.createElement("div")
       // const name = document.getElementById('name')

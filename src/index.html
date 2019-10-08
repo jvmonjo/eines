@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="/js/index.js"></script>
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.scss">
+  <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png">
   <script src="https://kit.fontawesome.com/dbc15ce4ab.js" crossorigin="anonymous"></script>
   <title>Treball assignatura Eines HTML i CSS</title>
 </head>
@@ -14,7 +15,14 @@
 <body>
   <header>
     <h1><a href="/">GOT</a></h1>
-    <nav>
+    <div class="menu-btn">
+      <button id="menu-btn" class="hamburger hamburger--slider" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <nav id="nav-menu">
       <ul>
         <li id="menu House Stark"><a href="/house?name=House Stark">House of Stark</a></li>
         <li id="menu House Lannister"><a href="/house?name=House Lannister">House of Lannister</a></li>
@@ -27,6 +35,29 @@
       <blockquote id="quote">carregant...</blockquote>
       <cite id="cite"></cite>
     </div>
+    <section id="categories">
+      <a href="/house?name=House Stark">
+        <div class="card">
+          <img class="home-card" src="/assets/img/House Stark.svg" alt="House Stark">
+          <h3>House Stark</h3>
+          <p><em>Winter is comming</em></p>
+        </div>
+      </a>
+      <a href="/house?name=House Lannister">
+        <div class="card">
+          <img class="home-card" src="/assets/img/House Lannister.svg" alt="House Lannister">
+          <h3>House Lannister</h3>
+          <p><em>A Lannister always pays his debts</em></p>
+        </div>
+      </a>
+      <a href="/house?name=House Targaryen">
+        <div class="card">
+          <img class="home-card" src="/assets/img/House Targaryen.svg" alt="House Stark">
+          <h3>House Targaryen</h3>
+          <p><em>Fire and Blood</em></p>
+        </div>
+      </a>
+    </section>
   </main>
 </body>
 

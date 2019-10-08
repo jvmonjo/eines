@@ -6,15 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="/js/members.js"></script>
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.scss">
   <script src="https://kit.fontawesome.com/dbc15ce4ab.js" crossorigin="anonymous"></script>
-  <title>House of Lannister | Treball assignatura Eines HTML i CSS</title>
+  <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png">
+  <title>House | Treball assignatura Eines HTML i CSS</title>
 </head>
 
 <body>
   <header>
     <h1><a href="/">GOT</a></h1>
-    <nav>
+    <div class="menu-btn">
+      <button id="menu-btn" class="hamburger hamburger--slider" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <nav id="nav-menu">
       <ul>
         <li id="menu House Stark"><a href="/house?name=House Stark">House of Stark</a></li>
         <li id="menu House Lannister"><a href="/house?name=House Lannister">House of Lannister</a></li>

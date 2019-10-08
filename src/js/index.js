@@ -1,2 +1,6 @@
 import getQuote from './api/quote'
-getQuote();
+import handleMenu from './menu'
+window.onload = function () {
+  handleMenu()
+  getQuote()
+}
