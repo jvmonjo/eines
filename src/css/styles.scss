@@ -279,6 +279,10 @@ img.house {
 
 .image-container {
   width: 200px;
+
+  @include for-tablet-or-less {
+    width: 100px;
+  }
 }
 
 .house-header .image-container {
