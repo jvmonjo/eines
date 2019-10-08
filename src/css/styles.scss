@@ -133,27 +133,6 @@ nav ul {
   }
 }
 
-.hamburger {
-  font: inherit;
-  display: inline-block;
-  overflow: visible;
-  margin: 0;
-  padding: 15px;
-  cursor: pointer;
-  transition-timing-function: linear;
-  transition-duration: .15s;
-  transition-property: opacity, filter;
-  text-transform: none;
-  color: inherit;
-  border: 0;
-  background-color: transparent;
-}
-
-.hamburger.is-active:hover,
-.hamburger:hover {
-  opacity: .7;
-}
-
 nav ul li {
   margin: 0 1rem;
 
