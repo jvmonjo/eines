@@ -8,11 +8,11 @@ export default function getDetails(slug) {
       document.title = `${details.name} details | Treball assignatura Eines HTML i CSS`
       const title = document.getElementById('title')
       title.innerHTML = details.name
-      const menu = document.getElementById(`menu ${details.house}`)
-      menu.className = 'active'
-      const escut = document.getElementById('escut')
       const n = details.house.split(' ')
       const houseId = n[n.length - 1]
+      const menu = document.getElementById(`menu-${houseId}`)
+      menu.className = 'active'
+      const escut = document.getElementById('escut')
       escut.src = `/assets/img/${houseId}.svg`
       if (details.image) {
         const photo = document.getElementById('photo')
