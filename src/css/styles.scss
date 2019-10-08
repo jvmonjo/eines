@@ -43,11 +43,20 @@
   --grey: #efefef;
 }
 
+html,
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul.description {
+  padding-left: 2rem;
+}
+
 body {
   font-family: 'Proza Libre', sans-serif;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
   background-color: var(--grey);
 }
 
@@ -110,7 +119,6 @@ nav ul {
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 0;
   }
 }
 
