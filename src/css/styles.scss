@@ -110,6 +110,7 @@ nav ul {
     display: flex;
     flex-flow: column;
     align-items: center;
+    padding: 0;
   }
 }
 
@@ -146,7 +147,11 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 1rem;
+  margin: 0 1rem;
+
+  @include for-tablet-or-less {
+    margin: 0.5rem 0;
+  }
 }
 
 nav ul li.active::after {
