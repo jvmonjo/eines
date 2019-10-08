@@ -15,6 +15,8 @@ https://github.com/parcel-bundler/parcel/issues/1315
 
 -Instalat axios per a gestionar les cridades a api
 -Afegida la llibreria d'estils css _hamburguers_ per gestionar el botó del menú
+-En safari m'apareix un error que fa referència al iframe de youtube del que no he trobat solució: 
+```Trying to call enumerateDevices from a frame without correct 'allow' attribute.```
 
 ## Dades
 Les dades provenen d'aquestes apis:
