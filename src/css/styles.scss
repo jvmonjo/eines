@@ -269,8 +269,9 @@ img.home-card {
 }
 
 img.house {
-  width: 50px;
-  height: 50px;
+  display: block;
+  width: 100%;
+  height: auto;
   margin-right: 1rem;
 }
 
@@ -297,7 +298,17 @@ img.house {
   display: flex;
 }
 
+.image-container {
+  width: 200px;
+}
+
+.house-header .image-container {
+  width: 50px;
+  margin-right: 1rem;
+}
+
 #details img {
-  width: 100px;
+  display: block;
+  width: 100%;
   height: auto;
 }
