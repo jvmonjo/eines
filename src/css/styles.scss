@@ -37,11 +37,11 @@
   }
 }
 
-:root {
-  --primary-color: SteelBlue;
-  --light-background-color: rgba(70, 130, 180, 0.2);
-  --grey: #efefef;
-}
+$primary-color: SteelBlue;
+$light-background-color: lighten($primary-color, 40%);
+$grey: #efefef;
+$footer-color: darken($primary-color, 30%);
+$link-dark: $light-background-color;
 
 html,
 body,
@@ -56,7 +56,7 @@ a {
 }
 
 a:hover:not(.menu) {
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 ul.description {
@@ -66,7 +66,7 @@ ul.description {
 body {
   font-family: 'Proza Libre', sans-serif;
   min-height: 100vh;
-  background-color: var(--grey);
+  background-color: $grey;
 }
 
 h1,
@@ -84,7 +84,7 @@ header {
   display: flex;
   align-items: center;
   padding: 0.5rem;
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   color: white;
   min-height: 40px;
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
@@ -193,8 +193,8 @@ blockquote {
 }
 
 .quote {
-  border-top: 5px solid var(--primary-color);
-  background-color: var(--light-background-color);
+  border-top: 5px solid $primary-color;
+  background-color: $light-background-color;
   padding: 1rem;
   max-width: 500px;
   margin: 2rem auto 2rem auto;
@@ -334,5 +334,21 @@ figcaption cite {
 
 #members .card,
 .details .card {
-  border-top: 5px solid var(--primary-color);
+  border-top: 5px solid $primary-color;
+}
+
+footer {
+  background-color: $footer-color;
+  padding: 1rem 0;
+  color: white;
+  font-size: 0.8rem;
+}
+
+footer a {
+  color: $link-dark;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
 }
