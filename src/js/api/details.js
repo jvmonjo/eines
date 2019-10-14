@@ -37,6 +37,9 @@ export default function getDetails(slug) {
       return axios.get(`https://api.got.show/api/book/characters/byHouse/${details.house}`)
         .then(function (response) {
           const members = response.data
+          // aleatoritza els membres per a que no isquen sempre els mateixos suggeriments
+          shuffle(members)
+          // n'agafem 4
           const relatedMembers = members.slice(0, 4)
           const relatedContainer = document.getElementById('members')
           const toAdd = document.createDocumentFragment();
@@ -55,7 +58,7 @@ export default function getDetails(slug) {
             a.appendChild(dead);
             a.appendChild(gender);
             a.id = member.id;
-            li.className = 'card';
+            a.className = 'card';
             toAdd.appendChild(li);
             relatedContainer.appendChild(toAdd);
             // console.log(member);
@@ -67,6 +70,22 @@ export default function getDetails(slug) {
     })
 }
 
-export function getRelated() {
+function shuffle(array) {
+  var currentIndex = array.length,
+    temporaryValue, randomIndex;
 
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
 }

@@ -30,7 +30,7 @@ export default function getMembers(house) {
         a.appendChild(dead);
         a.appendChild(gender);
         a.id = member.id;
-        li.className = 'card';
+        a.className = 'card';
         toAdd.appendChild(li);
         document.getElementById('members').appendChild(toAdd);
         // console.log(member);
