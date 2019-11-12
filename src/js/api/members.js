@@ -11,10 +11,15 @@ export default function getMembers(house) {
       const escut = document.getElementById('escut')
       const n = house.split(' ')
       const houseId = n[n.length - 1]
+      // marquem l'element del menúcom a actiu
       const menu = document.getElementById(`menu-${houseId}`)
       menu.className = 'active'
+
+      // canviem la imatge placeholder per la corresponent
       escut.src = `/assets/img/${houseId}.svg`
       const toAdd = document.createDocumentFragment();
+
+      // creem els elements de la categoria
       for (const member of members) {
         const li = document.createElement('li');
         const a = document.createElement('a');
@@ -35,11 +40,6 @@ export default function getMembers(house) {
         document.getElementById('members').appendChild(toAdd);
         // console.log(member);
       }
-      // const div = document.createElement("div")
-      // const name = document.getElementById('name')
-      // name.innerHTML = response.data.quote
-      // const gender = document.getElementById('gender')
-      // gender.innerHTML = response.data.character
     })
     .catch(function (error) {
       console.log(error);

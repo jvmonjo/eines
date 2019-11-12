@@ -10,10 +10,16 @@ export default function getDetails(slug) {
       title.innerHTML = details.name
       const n = details.house.split(' ')
       const houseId = n[n.length - 1]
+
+      // marquem la casa corresponent com a activa al menú
       const menu = document.getElementById(`menu-${houseId}`)
       menu.className = 'active'
+
+      // canviem la imatge placeholder per la correcta
       const escut = document.getElementById('escut')
       escut.src = `/assets/img/${houseId}.svg`
+
+      // Emplenem els detalls
       if (details.image) {
         const photo = document.getElementById('photo')
         photo.src = details.image
@@ -33,7 +39,8 @@ export default function getDetails(slug) {
       const death = document.getElementById('death')
       death.innerHTML = details.death ? details.death : ''
       // console.log(details);
-      // Populate related
+
+      // Emplenem els relacionats
       return axios.get(`https://api.got.show/api/book/characters/byHouse/${details.house}`)
         .then(function (response) {
           const members = response.data
