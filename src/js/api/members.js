@@ -1,22 +1,22 @@
-import axios from 'axios'
+import axios from 'axios';
 
 export default function getMembers(house) {
   axios.get(`https://api.got.show/api/book/characters/byHouse/${house}`)
     .then(function (response) {
       // console.log(response.data)
-      const members = response.data
-      document.title = `${house} | Treball assignatura Eines HTML i CSS`
-      const title = document.getElementById('title')
-      title.innerHTML = house
-      const escut = document.getElementById('escut')
-      const n = house.split(' ')
-      const houseId = n[n.length - 1]
+      const members = response.data;
+      document.title = `${house} | Treball assignatura Eines HTML i CSS`;
+      const title = document.getElementById('title');
+      title.innerHTML = house;
+      const escut = document.getElementById('escut');
+      const n = house.split(' ');
+      const houseId = n[n.length - 1];
       // marquem l'element del menúcom a actiu
-      const menu = document.getElementById(`menu-${houseId}`)
-      menu.className = 'active'
+      const menu = document.getElementById(`menu-${houseId}`);
+      menu.className = 'active';
 
       // canviem la imatge placeholder per la corresponent
-      escut.src = `/assets/img/${houseId}.svg`
+      escut.src = `/assets/img/${houseId}.svg`;
       const toAdd = document.createDocumentFragment();
 
       // creem els elements de la categoria
@@ -43,5 +43,5 @@ export default function getMembers(house) {
     })
     .catch(function (error) {
       console.log(error);
-    })
+    });
 }
