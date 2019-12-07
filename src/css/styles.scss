@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative|Proza+Libre:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Proza+Libre:400,700&display=swap');
 $hamburger-layer-color: white;
 
 @mixin for-phone-only {
@@ -64,7 +64,7 @@ ul.description {
 }
 
 body {
-  font-family: "Proza Libre", sans-serif;
+  font-family: 'Proza Libre', sans-serif;
   min-height: 100vh;
   background-color: $grey;
 }
@@ -78,11 +78,12 @@ h6,
 nav ul,
 blockquote,
 a.menu {
-  font-family: "Cinzel Decorative", cursive;
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 a.logo {
   font-size: 1.5rem;
+  width: 100px;
 }
 
 header {
@@ -162,7 +163,7 @@ nav ul li.active::after {
   width: 100%;
   display: block;
   background-color: white;
-  content: "";
+  content: '';
 }
 
 header a {
@@ -174,7 +175,7 @@ nav ul li::after {
   width: 0;
   display: block;
   background-color: white;
-  content: "";
+  content: '';
   transition: 0.5s ease-in-out;
 }
 
@@ -449,7 +450,7 @@ $hamburger-active-hover-filter: $hamburger-hover-filter !default;
 
   &::before,
   &::after {
-    content: "";
+    content: '';
     display: block;
   }
 
@@ -500,4 +501,15 @@ $hamburger-active-hover-filter: $hamburger-hover-filter !default;
       }
     }
   }
+}
+
+#logo-wrapper {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: center;
+}
+
+#logo-wrapper img {
+  max-height: 100%;
 }
