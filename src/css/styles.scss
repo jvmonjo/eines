@@ -564,3 +564,23 @@ header * {
   max-width: 900px;
   margin: auto;
 }
+
+.member img {
+  max-width: 100%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  transition: 0.5s ease-in-out;
+}
+
+.image-wrapper {
+  clip-path: circle();
+  overflow: hidden;
+}
+
+.member img:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
