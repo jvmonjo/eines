@@ -77,7 +77,8 @@ h5,
 h6,
 nav ul,
 blockquote,
-a.menu {
+a.menu,
+a.footer {
   font-family: 'Cinzel Decorative', cursive;
 }
 
@@ -508,6 +509,10 @@ $hamburger-active-hover-filter: $hamburger-hover-filter !default;
   align-items: center;
   height: 40px;
   justify-content: center;
+}
+
+footer #logo-wrapper {
+  justify-content: flex-start;
 }
 
 #logo-wrapper img {
