@@ -42,6 +42,64 @@ S'han inclòs les imatges de cada ítem dins de la seua corresponent targeta, am
 
 ### Pàgina de detall
 
+Pel que fa a les imatge presenta una imatge en format svg que representa la categoria. A continuació dins de la targeta està la imatge principal que s'adapta a qualsevol mida de pantalla amb css:
+
+```css
+#details img {
+  width: 100%;
+  height: auto;
+}
+```
+
+A continuació hi ha dues imatge secundàries. La primera amb direcció d'art, presentarà una imatge apaisada en pantalles de més de 800px d'amplada i una imatge més retallada en pantalles més petites:
+
+```html
+<picture>
+  <source media="(max-width: 799px)" srcset="/assets/img/retallada.jpg" />
+  <source media="(min-width: 800px)" srcset="/assets/img/ampla.jpg" />
+  <img src="/assets/img/ampla.jpg" alt="" />
+</picture>
+```
+
+Per a l'altra imatge s'ha usat un srcset per a presentar la imatge més petita possible en funció de la mida de pantalla:
+
+```html
+<img
+  srcset="/assets/img/300.jpg 480w, /assets/img/600.jpg 600w"
+  sizes="(max-width: 320px) 280px,
+  (max-width: 480px) 440px,
+  800px"
+  src="/assets/img/1200.jpg"
+  alt="GOT cover"
+/>
+```
+
+Per últim tenim el vídeo responsiu que ja va ser introduït a la pac1
+
+```css
+iframe {
+  border: 0;
+}
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+```
+
 ### Efectes
 
 Afegida a la pàgina de categoria amb un wrapper amb clip-path i efecte de zoom al fer hover. L'efecte de zoom s'ha fer amb transform / scale i s'ha suavitzat l'efecte amb un transition de 0.5s i ease-in-out.
