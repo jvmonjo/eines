@@ -65,12 +65,16 @@ Per a l'altra imatge s'ha usat un srcset per a presentar la imatge més petita p
 
 ```html
 <img
-  srcset="/assets/img/300.jpg 480w, /assets/img/600.jpg 600w"
-  sizes="(max-width: 320px) 280px,
-  (max-width: 480px) 440px,
-  800px"
-  src="/assets/img/1200.jpg"
-  alt="GOT cover"
+  srcset="
+    /assets/img/300.jpg  480w,
+    /assets/img/600.jpg  600w,
+    /assets/img/1200.jpg 800w
+  "
+  sizes="(max-width: 320px) 300px,
+  (max-width: 480px) 600px,
+  1200px"
+  src="/assets/img/300.jpg"
+  alt=""
 />
 ```
 
