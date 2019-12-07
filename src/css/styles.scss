@@ -37,6 +37,10 @@ $hamburger-layer-color: white;
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 $primary-color: SteelBlue;
 $light-background-color: lighten($primary-color, 40%);
 $grey: #efefef;
