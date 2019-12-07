@@ -351,6 +351,16 @@ footer {
   padding: 1rem;
   color: white;
   font-size: 0.8rem;
+  clip-path: polygon(
+    63% 8%,
+    76% 2%,
+    87% 8%,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 0,
+    49% 0
+  );
 }
 
 footer a {
@@ -515,6 +525,42 @@ footer #logo-wrapper {
   justify-content: flex-start;
 }
 
+.right {
+  margin-top: 50px;
+}
+
 #logo-wrapper img {
   max-height: 100%;
+}
+
+.clip-circle {
+  width: 60px;
+  height: 60px;
+  clip-path: circle(30px at center);
+}
+
+#profile {
+  display: flex;
+  padding: 0.2rem;
+  align-items: center;
+  background: slategray;
+  border-radius: 5px;
+  clip-path: polygon(0 0, 94% 0, 100% 100%, 0% 100%);
+}
+
+#profile-data {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  & h4 {
+    margin: 0;
+    padding: 0;
+  }
+  & a:hover {
+    color: inherit !important;
+  }
+}
+
+header * {
+  max-width: 900px;
+  margin: auto;
 }

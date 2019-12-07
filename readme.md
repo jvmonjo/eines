@@ -31,3 +31,7 @@ https://got-quotes.herokuapp.com/
 ### Logo
 
 Per al logo he usat una senzilla silueta d'escut en blanc. He usat com a format svg. Junt a l'escut les inicials GOT (Game of Thrones) amb tipografia "Cinzel Decorative".
+
+### Peu
+
+S'ha inclòs una imtge de perfil amb un efecte clip-path en forma de cercle. I s'ha reorganitzat la informació del perfil amb la inclusió d'enllaços socials i icones de fontawesome. El propi div on està la informació de perfil també s'ha modificat amb un clip-path en forma de poligon, i tanmateix el propi footer també se li ha incorporat un efecte clip-path.
