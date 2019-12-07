@@ -118,7 +118,9 @@ nav {
   @include for-tablet-or-less {
     visibility: hidden;
     margin-top: -1900px;
-    transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    display: none;
+    height: 0;
+    transition: 0.5s ease-in-out;
   }
 }
 
@@ -126,7 +128,9 @@ nav.is-active {
   @include for-tablet-or-less {
     visibility: visible;
     margin-top: 0;
-    transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    display: block;
+    height: auto;
+    transition: 0.5s ease-in-out;
   }
 }
 
@@ -580,7 +584,7 @@ header * {
   overflow: hidden;
 }
 
-.member img:hover {
+#members .card:hover img {
   transform: scale(1.2);
   transition: 0.5s ease-in-out;
 }
