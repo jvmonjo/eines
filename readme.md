@@ -6,7 +6,7 @@ Si estàs llegint açò o ets el meu professor o probablement has arribat ací p
 
 ### Issues
 
--He tingut un problema de compilació a netlify perquè al meu ordinador tenia parcel instal·Lat globalment, però calia incloure'l via dependència de desenvolupament per a que netlify sigui capaç de compliar el lloc.
+-He tingut un problema de compilació a netlify perquè al meu ordinador tenia parcel instal·lat globalment, però calia incloure'l via dependència de desenvolupament per a que netlify sigui capaç de compilar el lloc.
 
 -També m'he trobat amb aquest problema tan prompte com he afegit pàgines al projecte:
 https://github.com/parcel-bundler/parcel/issues/1315
