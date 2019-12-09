@@ -30,7 +30,7 @@ https://got-quotes.herokuapp.com/
 
 ### Logo
 
-Per al logo he usat una senzilla silueta d'escut en blanc. He usat com a format svg. Junt a l'escut les inicials GOT (Game of Thrones) amb tipografia "Cinzel Decorative".
+Per al logo he usat una senzilla silueta d'escut en blanc que he editat amb Illustrator. He usat com a format svg. Junt a l'escut les inicials GOT (Game of Thrones) amb tipografia "Cinzel Decorative".
 
 ### Peu
 
