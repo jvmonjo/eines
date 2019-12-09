@@ -36,6 +36,16 @@ Per al logo he usat una senzilla silueta d'escut en blanc. He usat com a format 
 
 S'ha inclòs una imtge de perfil amb un efecte clip-path en forma de cercle. I s'ha reorganitzat la informació del perfil amb la inclusió d'enllaços socials i icones de fontawesome. El propi div on està la informació de perfil també s'ha modificat amb un clip-path en forma de poligon, i tanmateix el propi footer també se li ha incorporat un efecte clip-path.
 
+També s'ha afegit una imatge decorativa d'un drac usant un element picture amb un source amb format webp per treure avantatge de les bondats d'aquest format en quant al nivell de compressió i qualitat, i un fallback amb png.
+
+```html
+<picture class="dragon">
+  <source type="image/webp" srcset="/assets/img/drac.webp" />
+  <source type="image/png" srcset="/assets/img/drac.png" />
+  <img src="/assets/img/drac.webp" alt="" />
+</picture>
+```
+
 ### Pàgina de categoria
 
 S'han inclòs les imatges de cada ítem dins de la seua corresponent targeta, amb un efecte clip-path i amb efecte zoom al fer hover sobre la targeta.
@@ -51,7 +61,7 @@ Pel que fa a les imatge presenta una imatge en format svg que representa la cate
 }
 ```
 
-A continuació hi ha dues imatge secundàries. La primera amb direcció d'art, presentarà una imatge apaisada en pantalles de més de 800px d'amplada i una imatge més retallada en pantalles més petites:
+A continuació hi ha dues imatge secundàries. La primera amb direcció d'art, presentarà una imatge apaisada en pantalles de més de 800px d'amplada i una imatge retallada més bé quadrada en pantalles més petites:
 
 ```html
 <picture>

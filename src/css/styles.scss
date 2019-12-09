@@ -365,6 +365,7 @@ footer {
   padding: 1rem;
   color: white;
   font-size: 0.8rem;
+  clear: both;
   clip-path: polygon(
     63% 8%,
     76% 2%,
@@ -603,4 +604,12 @@ header * {
   @include for-tablet-or-less {
     margin: auto;
   }
+}
+
+.dragon img {
+  width: 200px;
+  float: right;
+  z-index: 10;
+  position: relative;
+  bottom: -40px;
 }
