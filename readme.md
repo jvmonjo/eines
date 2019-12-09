@@ -143,3 +143,9 @@ Les imatges de la portada tenen un efecte de desplaçament, així com un efecte 
   transition: 0.6s ease-in-out;
 }
 ```
+
+### Optimització d'imatges
+
+Algunes imatges han estat redimensionades i comprimides usant una web app anomenada https://squoosh.app/
+
+Per exemple: les imatges anomenades 600.jpg (25kb) i 300.jpg (8kb) provenen de la imatge 1200.jpg (188kb).
