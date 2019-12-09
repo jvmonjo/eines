@@ -34,7 +34,7 @@ Per al logo he usat una senzilla silueta d'escut en blanc. He usat com a format 
 
 ### Peu
 
-S'ha inclòs una imtge de perfil amb un efecte clip-path en forma de cercle. I s'ha reorganitzat la informació del perfil amb la inclusió d'enllaços socials i icones de fontawesome. El propi div on està la informació de perfil també s'ha modificat amb un clip-path en forma de poligon, i tanmateix el propi footer també se li ha incorporat un efecte clip-path.
+S'ha inclòs una imatge de perfil amb un efecte clip-path en forma de cercle. I s'ha reorganitzat la informació del perfil amb la inclusió d'enllaços socials i icones de fontawesome. El propi div on està la informació de perfil també s'ha modificat amb un clip-path en forma de polígon, i tanmateix el propi footer també se li ha incorporat un efecte clip-path.
 
 També s'ha afegit una imatge decorativa d'un drac usant un element picture amb un source amb format webp per treure avantatge de les bondats d'aquest format en quant al nivell de compressió i qualitat, i un fallback amb png.
 
