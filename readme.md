@@ -146,6 +146,8 @@ Les imatges de la portada tenen un efecte de desplaçament, així com un efecte 
 
 ### Optimització d'imatges
 
-Algunes imatges han estat redimensionades i comprimides usant una web app anomenada https://squoosh.app/
+Algunes imatges han estat redimensionades i comprimides usant una web app que use molt assovint i que es pot usar com a app d'escriptori gràcies a que es tracta d'una pwa. Es tracta de https://squoosh.app/
 
-Per exemple: les imatges anomenades 600.jpg (25kb) i 300.jpg (8kb) provenen de la imatge 1200.jpg (188kb).
+Per exemple: les imatges anomenades 600.jpg (25kb) i 300.jpg (8kb) provenen de la redimensió i compressió de la imatge 1200.jpg (188kb).
+
+També he usat aquesta app per a convertir drac.png a drac.webp
