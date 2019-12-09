@@ -529,14 +529,14 @@ $hamburger-active-hover-filter: $hamburger-hover-filter !default;
   }
 }
 
-#logo-wrapper {
+.logo-wrapper {
   display: flex;
   align-items: center;
   height: 40px;
   justify-content: center;
 }
 
-footer #logo-wrapper {
+footer .logo-wrapper {
   justify-content: flex-start;
 }
 
@@ -544,7 +544,7 @@ footer #logo-wrapper {
   margin-top: 50px;
 }
 
-#logo-wrapper img {
+.logo-wrapper img {
   max-height: 100%;
 }
 
