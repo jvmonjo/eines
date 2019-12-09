@@ -13,8 +13,8 @@ Si estàs llegint açò o ets el meu professor o probablement has arribat ací p
 
 ## Observacions
 
-- Instalat axios per a gestionar les cridades a api
-- Afegida la llibreria d'estils css _hamburguers_ per gestionar el botó del menú
+- Instal·lat axios per a gestionar les cridades a api
+- Afegida la llibreria d'estils css _hamburgers_ per gestionar el botó del menú
 - En safari m'apareix un error que fa referència al iframe de youtube del que no he trobat solució:
   `Trying to call enumerateDevices from a frame without correct 'allow' attribute.`
 
@@ -61,7 +61,7 @@ Pel que fa a les imatge presenta una imatge en format svg que representa la cate
 }
 ```
 
-A continuació hi ha dues imatge secundàries. La primera amb direcció d'art, presentarà una imatge apaisada en pantalles de més de 800px d'amplada i una imatge retallada més bé quadrada en pantalles més petites:
+A continuació hi ha dues imatge secundàries. La primera amb direcció d'art, presentarà una imatge apaïsada en pantalles de més de 800px d'amplada i una imatge retallada més bé quadrada en pantalles més petites:
 
 ```html
 <picture>
@@ -118,7 +118,7 @@ iframe {
 
 Afegida a la pàgina de categoria amb un wrapper amb clip-path i efecte de zoom al fer hover. L'efecte de zoom s'ha fer amb transform / scale i s'ha suavitzat l'efecte amb un transition de 0.5s i ease-in-out.
 
-Els enllaços de menú tenen un effecte de subratllat fet amb un pseudoelement ::after afegit durant el :hover.
+Els enllaços de menú tenen un efecte de subratllat fet amb un pseudoelement ::after afegit durant el :hover.
 
 ```css
 nav ul li.active::after {
