@@ -151,3 +151,37 @@ Algunes imatges han estat redimensionades i comprimides usant una web app que us
 Per exemple: les imatges anomenades 600.jpg (25kb) i 300.jpg (8kb) provenen de la redimensió i compressió de la imatge 1200.jpg (188kb).
 
 També he usat aquesta app per a convertir drac.png a drac.webp
+
+### Extra
+
+S'ha creat un favicon a partir del logo usant la eina online https://realfavicongenerator.net/
+
+Aquesta eina genera favicons adaptats a diferents plataformes i genera també propietats de color del tema així com una versió reduïda d'un web manifest.
+
+```html
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="/assets/favicon/apple-touch-icon.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="/assets/favicon/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="/assets/favicon/favicon-16x16.png"
+/>
+<link rel="manifest" href="/assets/favicon/site.webmanifest" />
+<link
+  rel="mask-icon"
+  href="/assets/favicon/safari-pinned-tab.svg"
+  color="#4682B4"
+/>
+<meta name="msapplication-TileColor" content="#4682B4" />
+<meta name="theme-color" content="#4682B4" />
+```
