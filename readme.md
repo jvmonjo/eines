@@ -185,3 +185,74 @@ Aquesta eina genera favicons adaptats a diferents plataformes i genera també pr
 <meta name="msapplication-TileColor" content="#4682B4" />
 <meta name="theme-color" content="#4682B4" />
 ```
+
+## PAC 3
+
+### Portada
+
+Realitzat un primer anàlisi de rendiment usant la web https://developers.google.com/speed/pagespeed/insights/ ha resultat en una puntuació de 73 en mòbil i 93 en escriptori.
+
+En mòbil aquestes han estat les dades de rendiment:
+
+- Primera renderització de contingut: 4,1s
+- Primera renderització significativa: 4,1s
+- Índex de velocitat: 4,2s
+- Primera inactivitat de la CPU: 4,1s
+- Temps fins que és interactiva: 4,2s
+- Retard potencial màxim respecte a la primera interacció: 170 ms
+
+En escriptori aquestes han estat les dades de rendiment:
+
+- Primera renderització de contingut: 1s
+- Primera renderització significativa: 1s
+- Índex de velocitat: 1,6s
+- Primera inactivitat de la CPU: 1s
+- Temps fins que és interactiva: 1s
+- Retard potencial màxim respecte a la primera interacció: 40 ms
+
+Com a oportunitats de millora m'indica que puc fer el següent:
+
+- Elimina els recursos que bloquegen la renderització (2,2s en mòbil, 0,38s en escriptori)
+- Adapta la mida de les imatges (0,3s en mòbil)
+
+#### Primera iteració
+
+He afegit el paràmetre "defer" a la càrrega del javascript de fontawesome
+
+```html
+<script
+  defer
+  src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"
+  crossorigin="anonymous"
+></script>
+```
+
+La pàgina ha passat a puntuar 93 en mòbil i 100 en escriptori.
+
+En mòbil els temps de càrrega ha estat els següents:
+
+- Primera renderització de contingut: 1,7s
+- Primera renderització significativa: 1,7s
+- Índex de velocitat: 2s
+- Primera inactivitat de la CPU: 4,1s
+- Temps fins que és interactiva: 4,1s
+- Retard potencial màxim respecte a la primera interacció: 230 ms
+
+En escriptori els temps de càrrega ha estat els següents:
+
+- Primera renderització de contingut: 0,5s
+- Primera renderització significativa: 0,5s
+- Índex de velocitat: 0,9s
+- Primera inactivitat de la CPU: 0,9s
+- Temps fins que és interactiva: 0,9s
+- Retard potencial màxim respecte a la primera interacció: 60 ms
+
+#### Segona iteració
+
+He fet les imatges més petites per a que no necessiten reescalar-se i d'eixa manera disminuïr el pes d'aquestes i potencialment el temps de càrrega.
+
+S'han mantingut les mateixes puntuacions i mesures. però ha desaparegut la recomanació de baixar la mida de les imatges.
+
+#### Tercera iteració
+
+He descarregat les fonts en lloc de carregar-les des de la web de Google fonts per aprofitar l'avantatge de la càrrega des de cache.
