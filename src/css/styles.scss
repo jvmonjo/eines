@@ -1,5 +1,40 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Proza+Libre:400,700&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Proza+Libre:400,700&display=swap');
 $hamburger-layer-color: white;
+
+@font-face {
+  font-family: 'Cinzel Decorative';
+  src: url('/assets/fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: 'Cinzel Decorative';
+//   src: url('/assets/fonts/Cinzel_Decorative/CinzelDecorative-Bold.ttf');
+//   font-weight: 700;
+//   font-style: bold;
+// }
+
+@font-face {
+  font-family: 'Proza Libre';
+  src: url('/assets/fonts/Proza_Libre/ProzaLibre-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proza Libre';
+  src: url('/assets/fonts/Proza_Libre/ProzaLibre-Bold.ttf');
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Proza Libre';
+  src: url('/assets/fonts/Proza_Libre/ProzaLibre-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
 
 @mixin for-phone-only {
   @media (max-width: 599px) {
