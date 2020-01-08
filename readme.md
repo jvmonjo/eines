@@ -350,4 +350,24 @@ En escriptori els temps de càrrega ha estat els següents:
 
 ### Primera iteració
 
-Afegit "defer" a la càrrega del javascript dins del head. Les puntuacions han passat a 66 per a mòbil i 96 per a escriptori.
+Afegit "defer" a la càrrega del javascript dins del head. Les puntuacions han passat a 57 per a mòbil i 98 per a escriptori.
+
+Al igual que ocorre amb la pàgina de categoria, la pàgina de detall importa les dades des d'un api externa, la qual cosa limita les millores que es poden fer respecte al contingut.
+
+En mòbil els temps de càrrega ha estat els següents:
+
+- Primera renderització de contingut: 1,9s
+- Primera renderització significativa: 1,9s
+- Índex de velocitat: 4,5s
+- Primera inactivitat de la CPU: 9,5s
+- Temps fins que és interactiva: 10,1s
+- Retard potencial màxim respecte a la primera interacció: 490ms
+
+En escriptori els temps de càrrega ha estat els següents:
+
+- Primera renderització de contingut: 0,5s
+- Primera renderització significativa: 0,5s
+- Índex de velocitat: 0,8s
+- Primera inactivitat de la CPU: 1,9s
+- Temps fins que és interactiva: 1,9s
+- Retard potencial màxim respecte a la primera interacció: 90ms
