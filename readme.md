@@ -256,3 +256,23 @@ S'han mantingut les mateixes puntuacions i mesures. però ha desaparegut la reco
 #### Tercera iteració
 
 He descarregat les fonts en lloc de carregar-les des de la web de Google fonts per aprofitar l'avantatge de la càrrega des de cache.
+
+La puntuació insights ha millorat i passa a ser de 96 en mòbil i 100 per a escriptori.
+
+En mòbil els temps de càrrega ha estat els següents:
+
+- Primera renderització de contingut: 1,1s
+- Primera renderització significativa: 1,8s
+- Índex de velocitat: 1.5s
+- Primera inactivitat de la CPU: 3,6s
+- Temps fins que és interactiva: 3,6s
+- Retard potencial màxim respecte a la primera interacció: 160 ms
+
+En escriptori els temps de càrrega ha estat els següents:
+
+- Primera renderització de contingut: 0,4s
+- Primera renderització significativa: 0,5s
+- Índex de velocitat: 0,7s
+- Primera inactivitat de la CPU: 0,9s
+- Temps fins que és interactiva: 0,9s
+- Retard potencial màxim respecte a la primera interacció: 60 ms
