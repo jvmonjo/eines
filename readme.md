@@ -217,14 +217,12 @@ Com a oportunitats de millora m'indica que puc fer el següent:
 
 #### Primera iteració
 
-He afegit el paràmetre "defer" a la càrrega del javascript de fontawesome
+He afegit el paràmetre "defer" a la càrrega dels fitxers javascript.
 
 ```html
 <script
   defer
-  src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"
-  crossorigin="anonymous"
-></script>
+  ...
 ```
 
 La pàgina ha passat a puntuar 93 en mòbil i 100 en escriptori.
@@ -255,7 +253,10 @@ S'han mantingut les mateixes puntuacions i mesures. però ha desaparegut la reco
 
 #### Tercera iteració
 
-He descarregat les fonts en lloc de carregar-les des de la web de Google fonts per aprofitar l'avantatge de la càrrega des de cache.
+He precarregat les fonts de Google fonts:
+```html
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Proza+Libre:400,700&display=swap" rel="preload" as="style">
+```
 
 La puntuació insights ha millorat i passa a ser de 96 en mòbil i 100 per a escriptori.
 
@@ -281,7 +282,7 @@ En escriptori els temps de càrrega ha estat els següents:
 
 Agafant com a referència la url https://eines.netlify.com/house/?name=House%20Stark
 
-En un primer moment les puntuacions a Google insight de la pàgina són 35 per a mòbil i 76 per a escriptori. Val a dir que aquesta pàgina carrega el contingut d'una api de tercers i m'ha llimitat molt el marge de maniobra per a les millores.
+En un primer moment les puntuacions a Google insight de la pàgina són 35 per a mòbil i 76 per a escriptori. Val a dir que aquesta pàgina carrega el contingut d'una api de tercers i m'ha limitat molt el marge de maniobra per a les millores.
 
 En mòbil els temps de càrrega ha estat els següents:
 
@@ -303,25 +304,50 @@ En escriptori els temps de càrrega ha estat els següents:
 
 ### Primera iteració
 
-Afegit "defer" a la càrrega del javascript dins del head. Les puntuacions han passat a 43 per a mòbil i 92 per a escriptori.
+Afegit "defer" a la càrrega del javascript dins del head. Les puntuacions han passat a 66 per a mòbil i 96 per a escriptori.
 
 En mòbil els temps de càrrega ha estat els següents:
 
-- Primera renderització de contingut: 3,4s
-- Primera renderització significativa: 4,1s
-- Índex de velocitat: 6,6s
-- Primera inactivitat de la CPU: 6,2s
-- Temps fins que és interactiva: 9,9s
-- Retard potencial màxim respecte a la primera interacció: 1.530 ms
+- Primera renderització de contingut: 1,7s
+- Primera renderització significativa: 1,7s
+- Índex de velocitat: 4,5s
+- Primera inactivitat de la CPU: 6,9s
+- Temps fins que és interactiva: 8,0s
+- Retard potencial màxim respecte a la primera interacció: 1.660 ms
 
 En escriptori els temps de càrrega ha estat els següents:
 
-- Primera renderització de contingut: 0,8s
-- Primera renderització significativa: 1,1s
-- Índex de velocitat: 1,5s
-- Primera inactivitat de la CPU: 1,3s
-- Temps fins que és interactiva: 2,0s
-- Retard potencial màxim respecte a la primera interacció: 300 ms
+- Primera renderització de contingut: 0,5s
+- Primera renderització significativa: 1,5s
+- Índex de velocitat: 0,9s
+- Primera inactivitat de la CPU: 1,5s
+- Temps fins que és interactiva: 1,8s
+- Retard potencial màxim respecte a la primera interacció: 380 ms
 
-Les oportunitats de millora suggerides (adaptar la mida de les imatges, publicar imatges en format d'última generació, codificar les imatges amb eficiència) queden fora del meu abast per provenir d'una api externa.
+Les oportunitats de millora suggerides (adaptar la mida de les imatges, publicar imatges en format d'última generació, codificar les imatges amb eficiència, activa la compressió de text) queden fora del meu abast per provenir d'una api externa.
 
+### Pàgina de detall
+
+Agafant com a referència la url https://eines.netlify.com/details/?slug=Eddard_Stark les puntuacions han estat de 41 per a mòbil i 92 per a ordinador.
+
+En mòbil els temps de càrrega ha estat els següents:
+
+- Primera renderització de contingut: 4,0s
+- Primera renderització significativa: 4,0s
+- Índex de velocitat: 5,5s
+- Primera inactivitat de la CPU: 9,2s
+- Temps fins que és interactiva: 9,8s
+- Retard potencial màxim respecte a la primera interacció: 560 ms
+
+En escriptori els temps de càrrega ha estat els següents:
+
+- Primera renderització de contingut: 1,0s
+- Primera renderització significativa: 1,0s
+- Índex de velocitat: 1,2s
+- Primera inactivitat de la CPU: 2,0s
+- Temps fins que és interactiva: 2,2s
+- Retard potencial màxim respecte a la primera interacció: 160 ms
+
+### Primera iteració
+
+Afegit "defer" a la càrrega del javascript dins del head. Les puntuacions han passat a 66 per a mòbil i 96 per a escriptori.
