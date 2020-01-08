@@ -276,3 +276,52 @@ En escriptori els temps de càrrega ha estat els següents:
 - Primera inactivitat de la CPU: 0,9s
 - Temps fins que és interactiva: 0,9s
 - Retard potencial màxim respecte a la primera interacció: 60 ms
+
+### Pàgina de categoria
+
+Agafant com a referència la url https://eines.netlify.com/house/?name=House%20Stark
+
+En un primer moment les puntuacions a Google insight de la pàgina són 35 per a mòbil i 76 per a escriptori. Val a dir que aquesta pàgina carrega el contingut d'una api de tercers i m'ha llimitat molt el marge de maniobra per a les millores.
+
+En mòbil els temps de càrrega ha estat els següents:
+
+- Primera renderització de contingut: 3,6s
+- Primera renderització significativa: 3,8s
+- Índex de velocitat: 11,6s
+- Primera inactivitat de la CPU: 5,9s
+- Temps fins que és interactiva: 9,5s
+- Retard potencial màxim respecte a la primera interacció: 1360 ms
+
+En escriptori els temps de càrrega ha estat els següents:
+
+- Primera renderització de contingut: 0,8s
+- Primera renderització significativa: 1,3s
+- Índex de velocitat: 2,7s
+- Primera inactivitat de la CPU: 1,7s
+- Temps fins que és interactiva: 2,4s
+- Retard potencial màxim respecte a la primera interacció: 580 ms
+
+### Primera iteració
+
+Afegit "defer" a la càrrega del javascript dins del head. Les puntuacions han passat a 43 per a mòbil i 92 per a escriptori.
+
+En mòbil els temps de càrrega ha estat els següents:
+
+- Primera renderització de contingut: 3,4s
+- Primera renderització significativa: 4,1s
+- Índex de velocitat: 6,6s
+- Primera inactivitat de la CPU: 6,2s
+- Temps fins que és interactiva: 9,9s
+- Retard potencial màxim respecte a la primera interacció: 1.530 ms
+
+En escriptori els temps de càrrega ha estat els següents:
+
+- Primera renderització de contingut: 0,8s
+- Primera renderització significativa: 1,1s
+- Índex de velocitat: 1,5s
+- Primera inactivitat de la CPU: 1,3s
+- Temps fins que és interactiva: 2,0s
+- Retard potencial màxim respecte a la primera interacció: 300 ms
+
+Les oportunitats de millora suggerides (adaptar la mida de les imatges, publicar imatges en format d'última generació, codificar les imatges amb eficiència) queden fora del meu abast per provenir d'una api externa.
+
